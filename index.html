@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cenová Ponuka PON2023001</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        @media print {
+            body {
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+            .no-print {
+                display: none;
+            }
+            .page-break {
+                page-break-after: always;
+            }
+        }
+        .invoice-box {
+            max-width: 800px;
+            margin: auto;
+            padding: 30px;
+            border: 1px solid #eee;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+            font-size: 16px;
+            line-height: 24px;
+            color: #555;
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 p-4 sm:p-8">
+
+    <div class="invoice-box">
+        <!-- Hlavička s názvom firmy a číslom ponuky -->
+        <table cellpadding="0" cellspacing="0" class="w-full">
+            <tr class="top">
+                <td colspan="2" class="pb-5">
+                    <table class="w-full">
+                        <tr>
+                            <td class="text-xl" style="width:60%;">
+                                <h2 class="text-3xl font-bold text-gray-800">La Verde Tech s.r.o.</h2>
+                            </td>
+                            
+                            <td class="text-right">
+                                <h1 class="text-2xl sm:text-3xl font-bold text-gray-800">Cenová Ponuka</h1>
+                                <p class="text-gray-500">č. PON2023001</p>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+
+        <!-- Informácie o dodávateľovi a odberateľovi -->
+        <table cellpadding="0" cellspacing="0" class="w-full text-sm">
+            <tr class="information">
+                <td colspan="2" class="pb-8">
+                    <table class="w-full">
+                        <tr>
+                            <td class="pr-4">
+                                <h2 class="font-bold text-gray-700">Dodávateľ:</h2>
+                                <p class="font-semibold text-gray-800">La Verde Tech s.r.o.</p>
+                                <p>J. Palkoviča 3980/4<br>036 01 Martin</p>
+                                <p><strong>IČO:</strong> 54986028<br><strong>DIČ:</strong> 2121842943</p>
+                                <p><strong>Tel:</strong> 0903 509 821<br><strong>E-mail:</strong> office@laverdetech.sk</p>
+                            </td>
+                            
+                            <td class="pl-4">
+                                <h2 class="font-bold text-gray-700">Odberateľ:</h2>
+                                <p class="font-semibold text-gray-800">EVENT TECH PARTNER, s. r. o.</p>
+                                <p>A. Medňanského 50<br>036 01 Martin</p>
+                                <p><strong>IČO:</strong> 53816501<br><strong>DIČ:</strong> 2121507410</p>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+
+        <!-- Dátumy -->
+        <div class="flex justify-between text-sm bg-gray-50 p-3 rounded-lg mb-8">
+            <div>
+                <span class="font-semibold">Dátum vystavenia:</span> 19.07.2023
+            </div>
+            <div>
+                <span class="font-semibold">Dátum dodania:</span> 19.07.2023
+            </div>
+            <div>
+                <span class="font-semibold">Platnosť do:</span> 31.12.2023
+            </div>
+        </div>
+
+        <!-- Tabuľka s položkami -->
+        <table cellpadding="0" cellspacing="0" class="w-full">
+            <thead class="bg-gray-800 text-white text-left text-sm rounded-t-lg">
+                <tr>
+                    <th class="p-3 rounded-tl-lg">Popis položky</th>
+                    <th class="p-3 text-center">Množstvo</th>
+                    <th class="p-3 text-right">Jednotková cena</th>
+                    <th class="p-3 text-right rounded-tr-lg">Spolu</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="border-b">
+                    <td class="py-3 px-3">
+                        <p class="font-bold">Diagnostická správa</p>
+                        <p class="text-xs text-gray-600">Vypracovanie podrobnej štúdie existujúcich procesov vrátane analýzy rizík a príležitostí. Obdobie: 3 mesiace od začiatku realizácie projektu.</p>
+                    </td>
+                    <td class="py-3 px-3 text-center">1 ks</td>
+                    <td class="py-3 px-3 text-right">4 850,00 €</td>
+                    <td class="py-3 px-3 text-right">4 850,00 €</td>
+                </tr>
+                <tr class="border-b">
+                    <td class="py-3 px-3">
+                        <p class="font-bold">Návrh digitalizácie procesov (TO BE)</p>
+                        <p class="text-xs text-gray-600">Návrh konkrétnych krokov na digitalizáciu identifikovaných oblastí vrátane technologických riešení a roadmapy implementácie (bez vývoja alebo nasadenia). Obdobie: 9 mesiacov od začiatku realizácie projektu.</p>
+                    </td>
+                    <td class="py-3 px-3 text-center">1 ks</td>
+                    <td class="py-3 px-3 text-right">9 750,00 €</td>
+                    <td class="py-3 px-3 text-right">9 750,00 €</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Celková suma -->
+        <div class="flex justify-end mt-8">
+            <div class="w-full sm:w-1/2">
+                <table class="w-full">
+                    <tbody>
+                         <tr>
+                            <td class="py-4">
+                                <p class="text-sm italic text-gray-600">Nie sme platcom DPH.</p>
+                            </td>
+                            <td class="text-right py-4">
+                                <p class="font-bold text-gray-700">Celkom k úhrade:</p>
+                                <p class="text-2xl font-bold text-gray-900">14 600,00 €</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Doplňujúce informácie -->
+        <div class="mt-12 text-sm text-gray-600 border-t pt-6">
+            <p><span class="font-bold">Spôsob úhrady:</span> Prevodom na účet</p>
+            <p><span class="font-bold">IBAN:</span> SK4683300000002103193908</p>
+            <br>
+            <p>Ďakujeme za prejavenú dôveru. V prípade akýchkoľvek otázok nás neváhajte kontaktovať.</p>
+            <br>
+            <p>S pozdravom,</p>
+            <p class="font-semibold">Martin Danihel</p>
+            <p>La Verde Tech s.r.o.</p>
+        </div>
+    </div>
+
+    <!-- Tlačidlo na tlač/uloženie -->
+    <div class="text-center mt-8 no-print">
+        <button onclick="window.print()" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg shadow-lg transition duration-300">
+            Vytlačiť / Uložiť ako PDF
+        </button>
+    </div>
+
+</body>
+</html>
